@@ -1,0 +1,178 @@
+.joueur{
+    max-width: 20vh;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, .4);
+    min-width: 15vw;
+    min-height: 30vh;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #6262a5;  
+    padding: 10px; 
+}
+.joueur h3{
+    font-size: 14px;
+}
+.desactiver{
+    pointer-events: none;
+    cursor: default;
+    background-color: rgba(136, 71, 71, 0.4);
+}
+.desactiver button{
+    display: none;
+}
+.perdu{
+    color: brown;
+}
+
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: url("../img/bk.png");
+    background-size: cover;
+    background-color: #d3a1a1;
+    background-repeat: no-repeat;
+
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+}
+.table{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 50px;
+    min-width: 90%;
+    justify-content: space-around;
+}
+
+form{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    width: 50vw;
+    height: 50%;
+}
+.form{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vw;
+    background-color: rgba(255, 255, 255, .4);
+    max-width: 50%;
+    padding:20px;
+    border: 1px solid #1a1a1b;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #2a3cad;
+    width: 30vw;
+    height: 30vw;
+    display: flex;   
+    align-items: center;
+}
+input{
+    width: 10vw;
+}
+.dispa{
+    display: none;
+}
+.error-message{
+    color: crimson;
+    display: block;
+    margin-top: 20px;
+}
+.btn_action{
+    height: 15%;
+	display: flex;
+    align-items: stretch;
+
+	padding:5px;
+
+}
+.jouer, .form button{
+    box-sizing: content-box;
+    width: 40%;
+    display: block;
+	padding:10px;
+    margin-left: 5px;
+	background-color: #0153A5;
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+
+}
+.table{
+
+    margin-top: 20px;
+}
+.jouer:hover, .form button:hover{
+	background: #FFFFFF;
+	border: 2px solid #0153A5;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+	color: #0A3259;
+	box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.stoper{
+    display: block;
+    box-sizing: content-box;
+	padding:10px;
+    width: 40%;
+    margin-left: 5px;
+	background-color:#ED1444;
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+
+}
+.stoper:hover{
+	background: #FFFFFF;
+	border: 2px solid #ED1444;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+	color: #0A3259;
+	box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.tirage{
+    display: flex;
+    height: 15vw;
+    align-items:center;
+    justify-content: center;
+
+}
+.tirage img{
+    max-width: 10vw;
+}
+.gagnant{
+    background-color: chartreuse;
+}
+img{
+    margin-left: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e1e1e4;
+    max-width: 150px;
+}
+
+
+.mainJoueur img{
+    width: 50px;
+}
+.btn_rejouer{
+    box-sizing: content-box;
+    width: 40%;
+    display: block;
+	padding:10px;
+    margin-left: 5px;
+	background-color: #0153A5;
+	color:white;
+	text-align: center;
+	border-radius: 5px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 10vw;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}

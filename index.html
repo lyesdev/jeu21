@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr_CA">
+<head>
+    <!-- meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Exercice sommatif 1</title>
+	<meta name="description" content="Exercice 1 sur les tableaux (sommatif) du cours 582-P51-MA Programmation interactive client-serveur">
+
+	<!-- styles -->
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+    <!-- scripts -->
+    
+    
+    <!-- Importation de l’objet carte pour utilisation comme référence -->
+    <script  type="module"> 
+    import {cartes} from "./scripts/cartes.js";
+    sessionStorage.setItem("jeuCarteOriginal", JSON.stringify(cartes));
+    sessionStorage.setItem("jeuCartePartie", sessionStorage.jeuCarteOriginal);/* Création d’un jeu de carte pour la partie ou des cartes  seront retirés */  
+    </script>
+    
+    <script src="./scripts/Game.js" ></script>
+    <script src="./scripts/Player.js" ></script>
+    <script src="./scripts/Board.js" ></script>   
+    <script src="./scripts/script.js" ></script>
+
+</head>
+
+<body>
+	<header>
+		
+	</header>
+	<main>
+  
+        <div class="back" data-js-jeu21>
+            <div class="form" data-js-form>
+                <form> 
+                    <h2>TP Lyes Bennour</h2>             
+                    <div class="input-wrapper" data-js-input-wrapper>
+                        <label for="nom">Nombre Joueurs :</label>
+                        <input type="number" id="nbrJoueurs" name="nbrJoueurs" data-js-input="nbrJoueurs" required><small class="error-message" data-js-error-msg></small>
+                    </div>
+
+                    <button data-js-submit>Soumettre</button>
+                </form>
+            </div>
+            <div class="board" data-js-board>
+                <div class="tirage"></div>
+                <div class="table" data-js-table> 
+                    
+                </div>
+            </div>
+
+        </div>
+        
+	</main>
+</body>
+</html>
